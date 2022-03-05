@@ -1,0 +1,104 @@
+/* resets
+---------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+/*  custom properties
+---------------------------------------------------------------------------- */
+:root {
+    --ff-primary: 'Outfit', sans-serif;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --clr-dark: #333;
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+    --clr-footer: hsl(228, 45%, 44%);
+}
+/*
+---------------------------------------------------------------------------- */
+html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+    font-family: var(--ff-primary);
+    color: var(--clr-dark);
+    padding: 0;
+    margin: 10vh 0 0 0;
+}
+
+/* topograpy
+---------------------------------------------------------------------------- */
+p {
+  font-size: 15px; /* spec */
+  font-weight: var(--fw-reg);
+  line-height: 1.2em;
+  color: var(--clr-grayish-blue);
+}
+h1 {
+  font-size: 22px;
+  font-weight: var(--fw-bold);
+  line-height: 1.4em;
+}
+/* content
+---------------------------------------------------------------------------- */
+main {
+  height: 80vh;
+  max-width: 1440px; /* spec */
+  background-color: var(--clr-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  background-color: var(--clr-white);
+  width: 325px; /* 375px spec */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  box-shadow: 0 0 5px var(--clr-light-gray);
+  padding: 1.25rem 1rem 1.5rem 1rem;
+  border-radius: 1.5rem;
+}
+img {
+  border-radius: 0.75rem;
+}
+.card h1 {
+  display: inline-block;
+  max-width: 290px;
+  padding-top: 0.3rem;
+}
+.card p {
+  max-width: 260px;
+  padding-bottom: 1rem;
+}
+/* footer
+---------------------------------------------------------------------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
